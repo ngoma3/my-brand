@@ -16,14 +16,17 @@
   <div class="container">
     <nav>
       <img class="logo" src="images/logo.png" alt="logo">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blogs.html">Blog</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a class="login" href="login.html">Login</a></li>
-      </ul>
+      <i class="fa-solid fa-bars menu-bar"></i>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a class="login" href="login.html">Login</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
   <div class="content">
@@ -38,9 +41,9 @@
         <li><i class="fa-sharp fa-solid fa-location-dot"></i>Kiga;i-Rwanda</li>
       </ul>
     </div>
-    <div class="">
+    <div class="content-box">
       <div class="contact-box">
-        <div >
+        <div class="box1">
           <h4 >First name<span>*</span></h4>
           <input type="text" name="" value="">
         </div>
@@ -64,6 +67,13 @@
       <li><i class="fa-brands fa-linkedin"></i></li>
     </ul>
   </div>
+  <script>
+    menu = document.querySelector(".menu-bar");
+    menu.onclick = function(){
+      navbar=document.querySelector(".nav-bar");
+      navbar.classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>

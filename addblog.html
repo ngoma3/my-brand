@@ -10,12 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
-</head>
+    <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
+  </head>
 
 <body>
+  <div class="top-top">
+    <i class="fa-solid fa-bars menu-bar"></i>
+  </div>
+  <img class="logo" src="images/logo.png" alt="logo">
   <div class="content">
     <div class="container">
-        <img class="logo" src="images/logo.png" alt="logo">
+      <div class="top-cont">
         <ul>
           <li><a href="dashboard.html">Blogs</a>
             <hr>
@@ -30,6 +35,7 @@
             <hr>
           </li>
         </ul>
+      </div>
     </div>
     <div class="cont">
       <h1>Add Blog</h1>
@@ -63,6 +69,13 @@
       </div>
     </div>
   </div>
-
+  <script>
+    menu = document.querySelector(".menu-bar");
+    menu.onclick = function(){
+      navbar=document.querySelector(".container");
+      navbar.classList.toggle("active");
+    }
+                        CKEDITOR.replace( 'name' );
+                </script>
 </body>
 </html>

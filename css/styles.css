@@ -22,6 +22,9 @@ nav ul li a{
 nav ul li a:hover{
   color: white;
 }
+nav .menu-bar{
+  display: none;
+}
 .container{
   margin: 0 10% 0 10%;
 }
@@ -150,4 +153,239 @@ font-family: 'Roboto', sans-serif;
 }
 .about-bottom h2{
   font-size: 0.8rem;
+}
+.fullstack-mobile{
+  display: none;
+}
+/* ============================================================================================================= */
+@media screen and (max-width:1320px){
+  nav ul li{
+    padding-left:30px;
+    /* font-family: 'Josefin Sans', sans-serif; */
+  }
+  nav ul{
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .login{
+    padding-left: 0px;
+  }
+  .chris {
+    width: 400px;
+    height: 570px;
+    border-radius: 10%;
+    position: absolute;
+    left: 380px;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+  }
+}
+/* ================================================================================================================== */
+@media screen and (max-width:1000px){
+  body{
+    background-color: #222222;
+  }
+  nav{
+    justify-content: space-between;
+  }
+  nav ul li{
+    display: block;
+    padding-left:0;
+  }
+  .nav-bar ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #BCBCBA;
+    font-weight:500;
+    padding-bottom: 20px;
+  }
+  .nav-bar ul li{
+    padding-bottom: 20px;
+  }
+  nav ul li a:hover{
+    color: white;
+  }
+  nav .menu-bar{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  .nav-bar{
+    position: absolute;
+    height: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #222222;
+    transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .nav-bar.active{
+    height: 450px;
+
+  }
+  .nav-bar.active ul{
+    opacity: 1;
+  }
+  .nav-bar ul{
+    display: block;
+    list-style-type: none;
+    font-family: 'Roboto',sans-serif;
+    width: fit-content;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+
+  }
+  .container{
+    margin: 0 5% 0 5%;
+  }
+  .logo{
+    width: 180px;
+    height: 80px;
+  }
+  .nav-bar .login{
+    padding-left: 0;
+    color: #CFCF26;
+    font-size: 1.5rem;
+  }
+  .icons ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px;
+    color: #BCBCBA;
+  }
+  .one-content hr{
+    width: 44%;
+    margin-left: 0;
+    z-index: -1;
+
+  }
+  .one-content h1{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight:900;
+  }
+  .fullstack{
+    display: none;
+  }
+  .fullstack-mobile{
+    display: block;
+  }
+  .one-content p{
+    color: #9A9A98;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+  }
+  .one-content .mobile-t{
+    width: 100%;
+  }
+  .one-content .mobile-p{
+    padding-top: 100px;
+    text-align: center;
+  }
+  .one-content {
+    position: relative;
+    margin: 25px 5% 0 10%;
+  }
+  .chris {
+    width: 250px;
+    height: 350px;
+    border-radius: 10%;
+    position: absolute;
+    left: 45%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  .hello{
+    padding-top: 100px;
+  }
+  .fullstack{
+    padding-bottom: 50px
+  }
+  .brands {
+    text-align: center;
+  }
+  .brands hr{
+    width: 160px;
+    transform: rotate(90deg);
+    margin: 150px auto;
+  }
+  .brands ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: #BCBCBA;
+
+
+  }
+  .brands p{
+    color: #9A9A98;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+  }
+  .about-photo{
+    display: flex;
+    margin: 0 0 0 7%;
+    position: relative;
+
+  }
+  .chris2 {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 160px;
+    left: 0px;
+  }
+  .about-content {
+    background-color: white;
+    border-radius: 80px 80px 0 0;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  .about-content hr{
+    width: 70%;
+  }
+  .about-name{
+    color: #BCBCBA;
+    margin:220px 0 10px 45%;
+    font-size: 1.2rem;
+  }
+  .personal-info{
+    display: flex;
+    flex-direction: column;
+    margin:0 16% 0 16%;
+    padding: 50px 0 40px 0;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+  }
+  .personal-info h2{
+    text-align: center;
+}
+
+  .about-bottom{
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  }
+  .about-bottom ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px;
+  }
+  .about-bottom ul{
+    padding-top: 30px;
+  }
+  .about-bottom h2{
+    font-size: 0.8rem;
+  }
 }

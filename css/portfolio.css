@@ -19,6 +19,9 @@ nav ul li a{
 nav ul li a:hover{
   color: white;
 }
+nav .menu-bar{
+  display: none;
+}
 .container{
   margin: 0;
   padding: 0 10%;
@@ -50,10 +53,12 @@ nav ul li a:hover{
 
 }
 .box{
-  width: 27%;
+  width: 300px;
   background-color: #E8E8E8;
     position: relative;
     transition: transform 0.5s;
+    margin: 20px;
+
 }
 .shadow:before{
   content: '';
@@ -90,5 +95,84 @@ hr{
 .box:hover{
   transform: scale(1.1);
   z-index: 1;
-  background: rgba(1,1,0,0);
+}
+/* ============================================================================================================= */
+@media screen and (max-width:1320px){
+  nav ul li{
+    padding-left:30px;
+    /* font-family: 'Josefin Sans', sans-serif; */
+  }
+  nav ul{
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .login{
+    padding-left: 0px;
+  }
+}
+/* ================================================================================================================== */
+
+@media screen and (max-width:1000px){
+
+  nav{
+    justify-content: space-between;
+  }
+  nav ul li{
+    display: block;
+    padding-left:0;
+  }
+  .nav-bar ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #BCBCBA;
+    font-weight:500;
+    padding-bottom: 20px;
+  }
+  .nav-bar ul li{
+    padding-bottom: 20px;
+  }
+  nav ul li a:hover{
+    color: white;
+  }
+  nav .menu-bar{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  .nav-bar{
+    position: absolute;
+    height: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #222222;
+    transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .nav-bar.active{
+    height: 450px;
+
+  }
+  .nav-bar.active ul{
+    opacity: 1;
+  }
+  .nav-bar ul{
+    display: block;
+    list-style-type: none;
+    font-family: 'Roboto',sans-serif;
+    width: fit-content;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+
+  }
+
+  .projects{
+    flex-wrap: wrap;
+
+  }
 }

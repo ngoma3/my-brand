@@ -16,14 +16,17 @@
   <div class="container">
     <nav>
       <img class="logo" src="images/logo.png" alt="logo">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blogs.html">Blog</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a class="login" href="login.html">Login</a></li>
-      </ul>
+      <i class="fa-solid fa-bars menu-bar"></i>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a class="login" href="login.html">Login</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
   <div class="content">
@@ -49,6 +52,12 @@
             of what they want their customers to experience can become
             a reality while staying within predetermined company guidelines.
           </p>
+        </div>
+        <div class="comments">
+          <i class="fa-regular fa-comment like1"></i>
+          <i class="fa-regular fa-heart like"></i>
+          <i class="fa-solid fa-share like"></i>
+
         </div>
       </div>
       <div class="blog1">
@@ -97,6 +106,21 @@
         <hr>
       </div>
     </div>
+    <div class="likes" id="likke">
+      <h2>Comment section</h2>
+      <hr>
+      <ul>
+        <li><i class="fa-regular fa-user-vneck-hair"></i><span>Good!!</span></li>
+        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
+        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
+        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
+        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
+      </ul>
+      <h2>Add comment</h2>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <button type="button" class="post" name="button">Post</button>
+      <hr>
+    </div>
   </div>
   <div class="bottom-contact">
     <ul>
@@ -106,6 +130,16 @@
       <li><i class="fa-brands fa-linkedin"></i></li>
     </ul>
   </div>
+  <script>
+    menu = document.querySelector(".menu-bar");
+    menu.onclick = function(){
+      navbar=document.querySelector(".nav-bar");
+      navbar.classList.toggle("active");
+    }
+    document.querySelector(".like1").onclick= function(){
+      document.querySelector(".likes").classList.toggle("hide");
+    }
+  </script>
 </body>
 
 </html>

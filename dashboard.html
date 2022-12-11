@@ -13,23 +13,28 @@
 </head>
 
 <body>
+  <div class="top-top">
+    <i class="fa-solid fa-bars menu-bar"></i>
+  </div>
+  <img class="logo" src="images/logo.png" alt="logo">
   <div class="content">
     <div class="container">
-      <img class="logo" src="images/logo.png" alt="logo">
-      <ul>
-        <li><a href="dashboard.html">Blogs</a>
-          <hr>
-        </li>
-        <li><a href="addblog.html">Add blog</a>
-          <hr>
-        </li>
-        <li><a href="subscribers.html">Subscribers</a>
-          <hr>
-        </li>
-        <li><a class="logout"href="index.html">Logout</a>
-          <hr>
-        </li>
-      </ul>
+      <div class="top-cont">
+        <ul>
+          <li><a href="dashboard.html">Blogs</a>
+            <hr>
+          </li>
+          <li><a href="addblog.html">Add blog</a>
+            <hr>
+          </li>
+          <li><a href="subscribers.html">Subscribers</a>
+            <hr>
+          </li>
+          <li><a class="logout"href="index.html">Logout</a>
+            <hr>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="cont">
       <h1>Blogs</h1>
@@ -126,6 +131,13 @@
       </div>
     </div>
   </div>
+  <script>
+    menu = document.querySelector(".menu-bar");
+    menu.onclick = function(){
+      navbar=document.querySelector(".container");
+      navbar.classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>
