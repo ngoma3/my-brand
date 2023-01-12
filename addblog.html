@@ -28,7 +28,7 @@
           <li><a href="addblog.html">Add blog</a>
             <hr>
           </li>
-          <li><a href="subscribers.html">Subscribers</a>
+          <li><a href="subscribers.html">Inbox</a>
             <hr>
           </li>
           <li><a class="logout"href="index.html">Logout</a>
@@ -50,14 +50,22 @@
         </div>
       </div>
       <hr>
-      <h3>Article</h3>
-      <input type="text" name="" value="">
+      <div class="alert1">
+        <p>Published Successfuly <i class="fa-solid fa-circle-check"></i></p>
+      </div>
+
+      <form id="blogform" action="">
+<h3>Article</h3>
+      <input type="text" id="article" value="">
       <h3>Photo</h3>
-      <input class="photo" type="text" name="" value="">
-      <button class="choose" type="button" name="button">Choose File</button>
+      <input class="photo" type="file" id="photo" accept="image/*"> <br> <br>
+      <div class="picked">
+        <img src="" alt="" class="pic1">
+      </div>
       <h3>Descrition</h3>
-      <textarea name="name" rows="8" cols="80"></textarea>
-      <button class="post" type="button" name="button">Post</button>
+      <textarea name="name"  id="desc" rows="8" cols="80"></textarea>
+      <button class="post" type="submit" name="button">Post</button>
+    </form>
       <hr>
       <div class="bottom-contact">
         <ul>
@@ -69,13 +77,7 @@
       </div>
     </div>
   </div>
-  <script>
-    menu = document.querySelector(".menu-bar");
-    menu.onclick = function(){
-      navbar=document.querySelector(".container");
-      navbar.classList.toggle("active");
-    }
-                        CKEDITOR.replace( 'name' );
-                </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="src/addblog.js"></script>
 </body>
 </html>

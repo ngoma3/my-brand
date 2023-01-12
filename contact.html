@@ -42,21 +42,24 @@
       </ul>
     </div>
     <div class="content-box">
+      <form id="contactForm" action="" >
       <div class="contact-box">
         <div class="box1">
-          <h4 >First name<span>*</span></h4>
-          <input type="text" name="" value="">
+
+          <h4 class="b1">First name</h4>
+          <input type="text"  id="fname" required="true">
         </div>
         <div class="box2">
-          <h4 >Last name<span>*</span></h4>
-          <input type="text" name="" value="">
+          <h4 class="b2">Last name</h4>
+          <input type="text" id="lname"required="true">
         </div>
       </div>
-      <h4>Email<span>*</span></h4>
-      <input class="box-email"type="text" name="" value="">
+      <h4>Email</h4>
+      <input class="box-email"  type="email" id="email" required="true">
       <h4>What can I help you</h4>
-      <textarea name="name" rows="7" cols="60"></textarea><br>
-      <button type="button" name="button">Submit</button>
+      <textarea name="name" rows="7" cols="60" id="desc" required="true"></textarea><br>
+      <button type="submit" class="update" >Submit</button>
+    </form>
     </div>
   </div>
   <div class="bottom-contact">
@@ -67,13 +70,8 @@
       <li><i class="fa-brands fa-linkedin"></i></li>
     </ul>
   </div>
-  <script>
-    menu = document.querySelector(".menu-bar");
-    menu.onclick = function(){
-      navbar=document.querySelector(".nav-bar");
-      navbar.classList.toggle("active");
-    }
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="src/contact.js"></script>
 </body>
 
 </html>

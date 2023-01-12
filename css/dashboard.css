@@ -11,6 +11,8 @@ body{
   background-color: #222222;
   width: 250px;
   text-align: center;
+  position: absolute;
+  height: 100%;
 
 }
 .logo{
@@ -45,6 +47,7 @@ body{
 .cont{
   margin:30px 50px;
   width: 70%;
+  margin-left: 320px;
   position: relative;
 }
 .container ul li{
@@ -52,6 +55,7 @@ body{
   font-size: 1.2rem;
   list-style-type: none;
   color: #BCBCBA;
+  display: block;
 }
 .container ul{
   padding-left: 0;
@@ -95,18 +99,50 @@ body{
 .cont input{
   background-color: #D9D9D9;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   width: 50%;
   height: 30px;
 }
 .cont textarea{
   background-color: #D9D9D9;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   width: 50%;
 }
+.picked{
+display: none;
+}
+.alert1{
+  color: white;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #5F8D4E;
+  position: fixed;
+  top: 0;
+  left: 45%;
+  transition: 0.7s;
+  display: none;
+}
+.pic1{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
 .cont .photo{
-  width: 42%;
+  width: 50%;
+  border-radius: 10px;
+}
+.cont .photo::-webkit-file-upload-button{
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  background-color: #61876E;
+  color: white;
+}
+.cont .photo::-webkit-file-upload-button:hover{
+
+  background-color: #3C6255;
 }
 .cont .choose{
   border-radius: 8px;
@@ -124,6 +160,21 @@ body{
     margin-top: 30px;
 }
 .cont .post:hover{
+  background-color: #222222;
+  color: #BCBCBA;
+
+}
+.cont .post2{
+  border-radius: 8px;
+  height: 30px;
+  margin-left: 20px;
+  width: 100px;
+  background-color: #CFCF26;
+  border: none;
+  font-weight: 800;
+    margin-top: 30px;
+}
+.cont .post2:hover{
   background-color: #222222;
   color: #BCBCBA;
 
@@ -184,13 +235,18 @@ body{
     display: block;
     right: 20px;
     top: 25px;
-    font-size: 2rem;
+    font-size: 5rem;
     color: white;
     cursor: pointer;
   }
 
+  .logo{
+    width: 200px;
+    height: 100px;
+  }
+
   .top-top{
-    height: 80px;
+    height: 120px;
     width: 100%;
     background-color: #222222;
   }
@@ -211,6 +267,12 @@ body{
   .content .container ul{
     padding-top: 100px;
   }
+  .content .container ul a{
+    font-size: 2rem;
+  }
+  .content .container ul li{
+    padding: 20px 0;
+  }
   .content .cont{
     z-index: -1;
     width: 100%;
@@ -224,12 +286,73 @@ body{
   .list {
     flex-wrap: wrap;
 }
+.list p{
+    font-size: 1.5rem;
+}
+.list img{
+  width: 250px;
+  height: 250px;
+  margin: 10px 50px 10px 0;
+}
+.list .btns{
+  display: flex;
+  flex-direction: column;
+}
+.list .btns .update{
+  width: 170px;
+  height: 55px;
+  font-size: 1.8rem;
+}
 .cont input{
   width: 100%;
+  height: 70px;
+  font-size: 1.5rem;
 
+}
+.dive{
+  margin-left: 20px;
+}
+.cont{
+    margin-left: 10%;
 }
 .cont .photo{
-  width: 60%;
+  width: 100%;
+  height: 70px;
+  font-size: 1.5rem;
 }
-
+#blogform{
+  font-size: 1.5rem;
+}
+.cont #desc{
+  font-size: 1.5rem;
+}
+.total-blogs{
+  font-size: 1.5rem;
+  width: 40%;
+}
+.total-subs{
+  font-size: 1.5rem;
+  width: 50%;
+}
+.list-subs h4{
+ font-size: 1.5rem;
+}
+.list-subs .update{
+  width: 170px;
+  height: 55px;
+  font-size:1.8rem;
+}
+#blogform .post{
+  width: 170px;
+  height: 55px;
+  font-size:1.8rem;
+}
+#blogform .post2{
+  width: 170px;
+  height: 55px;
+  font-size:1.8rem;
+}
+.bottom-contact{
+  font-size: 2rem;
+}
 }

@@ -119,6 +119,10 @@ button{
 .content-box input{
   width: 100%;
 }
+.update:hover{
+  background-color: #222222;
+  color: #BCBCBA;
+}
 /* ============================================================================================================= */
 @media screen and (max-width:1320px){
   nav ul li{
@@ -146,22 +150,26 @@ button{
   }
   .nav-bar ul li a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #BCBCBA;
     font-weight:500;
     padding-bottom: 20px;
   }
   .nav-bar ul li{
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
   nav ul li a:hover{
     color: white;
   }
   nav .menu-bar{
     display: block;
-    font-size: 2rem;
+    font-size: 5rem;
     color: white;
     cursor: pointer;
+  }
+  .logo{
+    width: 200px;
+    height: 100px;
   }
   .nav-bar{
     position: absolute;
@@ -176,7 +184,7 @@ button{
     overflow: hidden;
   }
   .nav-bar.active{
-    height: 450px;
+    height: 800px;
 
   }
   .nav-bar.active ul{
@@ -196,4 +204,46 @@ button{
   .content {
     flex-direction: column;
     margin: 100px 40px 0;
+}
+.content p{
+  font-size: 1.5rem;
+}
+.contact-box{
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.content h4{
+  font-size: 1.5rem;
+}
+.content ul li{
+  font-size: 1.5rem;
+}
+.box2{
+  margin-left: 0;
+
+}
+.content-box input{
+  height: 60px;
+  font-size: 1.6rem;
+}
+.content-box textarea{
+  rows: 8;
+}
+.content-contact{
+  text-align: center;
+}
+.b1{
+  font-size: 1.5rem;
+}
+.content-contact ul{
+  text-align:left;
+}
+.bottom-contact{
+  font-size: 2rem;
+}
+.update{
+  width: 170px;
+  height: 55px;
+  font-size: 1.8rem;
+}
 }

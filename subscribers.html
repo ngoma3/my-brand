@@ -27,7 +27,7 @@
           <li><a href="addblog.html">Add blog</a>
             <hr>
           </li>
-          <li><a href="subscribers.html">Subscribers</a>
+          <li><a href="subscribers.html">Inbox</a>
             <hr>
           </li>
           <li><a class="logout"href="index.html">Logout</a>
@@ -49,46 +49,15 @@
         </div>
       </div>
       <hr>
+      <div id="messageList">
+
+      </div>
       <div class="list-subs">
         <h4>ngomachrs@gmail.com</h4>
         <button class="update" type="button" name="button">Remove</button>
       </div>
       <hr>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
+
 
       <div class="bottom-contact">
         <ul>
@@ -100,13 +69,8 @@
       </div>
     </div>
   </div>
-  <script>
-    menu = document.querySelector(".menu-bar");
-    menu.onclick = function(){
-      navbar=document.querySelector(".container");
-      navbar.classList.toggle("active");
-    }
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="src/contact.js"></script>
 </body>
 
 </html>

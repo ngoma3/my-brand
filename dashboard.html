@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
+    <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
           <li><a href="addblog.html">Add blog</a>
             <hr>
           </li>
-          <li><a href="subscribers.html">Subscribers</a>
+          <li><a href="subscribers.html">Inbox</a>
             <hr>
           </li>
           <li><a class="logout"href="index.html">Logout</a>
@@ -49,77 +50,12 @@
         </div>
       </div>
       <hr>
-      <div class="list">
-        <div class="blog-box">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <button class="update" type="button" name="button">Update</button>
-        <button class="update" type="button" name="button">Delete</button>
+      <div class="alert1">
+        <p>Updated Successfuly <i class="fa-solid fa-circle-check"></i></p>
       </div>
-      <hr>
-      <div class="list">
-        <div class="blog-box">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <button class="update" type="button" name="button">Update</button>
-        <button class="update" type="button" name="button">Delete</button>
-      </div>
-      <hr>
-      <div class="list">
-        <div class="blog-box">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <button class="update" type="button" name="button">Update</button>
-        <button class="update" type="button" name="button">Delete</button>
-      </div>
-      <hr>
-      <div class="list">
-        <div class="blog-box">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <button class="update" type="button" name="button">Update</button>
-        <button class="update" type="button" name="button">Delete</button>
-      </div>
-      <hr>
-      <div class="list">
-        <div class="blog-box">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <button class="update" type="button" name="button">Update</button>
-        <button class="update" type="button" name="button">Delete</button>
-      </div>
-      <hr>
+      <div  id="blogList">
 
+      </div>
 
       <div class="bottom-contact">
         <ul>
@@ -131,13 +67,8 @@
       </div>
     </div>
   </div>
-  <script>
-    menu = document.querySelector(".menu-bar");
-    menu.onclick = function(){
-      navbar=document.querySelector(".container");
-      navbar.classList.toggle("active");
-    }
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="src/blog.js"></script>
 </body>
 
 </html>

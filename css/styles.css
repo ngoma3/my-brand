@@ -195,20 +195,20 @@ font-family: 'Roboto', sans-serif;
   }
   .nav-bar ul li a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 2.7rem;
     color: #BCBCBA;
     font-weight:500;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .nav-bar ul li{
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
   nav ul li a:hover{
     color: white;
   }
   nav .menu-bar{
     display: block;
-    font-size: 2rem;
+    font-size: 5rem;
     color: white;
     cursor: pointer;
   }
@@ -225,7 +225,7 @@ font-family: 'Roboto', sans-serif;
     overflow: hidden;
   }
   .nav-bar.active{
-    height: 450px;
+    height: 800px;
 
   }
   .nav-bar.active ul{
@@ -246,13 +246,13 @@ font-family: 'Roboto', sans-serif;
     margin: 0 5% 0 5%;
   }
   .logo{
-    width: 180px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
   }
   .nav-bar .login{
     padding-left: 0;
     color: #CFCF26;
-    font-size: 1.5rem;
+    font-size: 2.7rem;
   }
   .icons ul li{
     list-style-type: none;
@@ -269,7 +269,7 @@ font-family: 'Roboto', sans-serif;
   .one-content h1{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight:900;
   }
   .fullstack{
@@ -287,7 +287,7 @@ font-family: 'Roboto', sans-serif;
     width: 100%;
   }
   .one-content .mobile-p{
-    padding-top: 100px;
+    padding-top: 200px;
     text-align: center;
   }
   .one-content {
@@ -295,8 +295,8 @@ font-family: 'Roboto', sans-serif;
     margin: 25px 5% 0 10%;
   }
   .chris {
-    width: 250px;
-    height: 350px;
+    width: 370px;
+    height: 470px;
     border-radius: 10%;
     position: absolute;
     left: 45%;
@@ -327,17 +327,18 @@ font-family: 'Roboto', sans-serif;
   .brands p{
     color: #9A9A98;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .about-photo{
     display: flex;
-    margin: 0 0 0 7%;
+    margin: 0 0 0 4%;
     position: relative;
 
   }
+
   .chris2 {
-    width: 190px;
-    height: 190px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
@@ -356,8 +357,9 @@ font-family: 'Roboto', sans-serif;
   }
   .about-name{
     color: #BCBCBA;
-    margin:220px 0 10px 45%;
-    font-size: 1.2rem;
+    margin:220px 0 10px 40%;
+    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
   }
   .personal-info{
     display: flex;
@@ -366,7 +368,7 @@ font-family: 'Roboto', sans-serif;
     padding: 50px 0 40px 0;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
+    font-size: 2rem;
   }
   .personal-info h2{
     text-align: center;
