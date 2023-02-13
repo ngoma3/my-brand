@@ -4,20 +4,6 @@ menu.onclick = function(){
   navbar.classList.toggle("active");
 };
 
-const firebaseConfig ={
-  apiKey: "AIzaSyCyAJ4MggAVXLTmFiT97E4zZs2STtiKuRc",
-  authDomain: "capstone-ffd2e.firebaseapp.com",
-  databaseURL: "https://capstone-ffd2e-default-rtdb.firebaseio.com",
-  projectId: "capstone-ffd2e",
-  storageBucket: "capstone-ffd2e.appspot.com",
-  messagingSenderId: "1037105321596",
-  appId: "1:1037105321596:web:a80fa919b576017e905bf9"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-var blogF = firebase.database().ref("messages");
-
 document.getElementById("contactForm").addEventListener("submit", (e) =>{
   e.preventDefault();
   var fname = getElementVal("fname");
@@ -25,20 +11,31 @@ document.getElementById("contactForm").addEventListener("submit", (e) =>{
   var email = getElementVal("email");
   var desc = getElementVal("desc");
   var name=fname.concat(" ",lname);
-  console.log(name,email,desc);
-  saveData(name ,email,desc);
-  alert("Thank you for contacting us,soon we shall check in on you!!");
-  document.getElementById("contactForm").reset();
+  if(localStorage.getItem("userToken")){
+  const userToken = localStorage.getItem("userToken");
+  fetch(`https://real-pear-squid-shoe.cyclic.app/messages`,{
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${userToken}`,
+          'Content-Type': 'application/json'
+        },
+      body: JSON.stringify({
+          "name": name,
+          "email": email,
+          "content": desc,
+      })
+    })
+    .then(res => res.json());
+    
+    document.getElementById("fname").value="";
+    document.getElementById("lname").value="";
+    document.getElementById("email").value="";
+    document.getElementById("desc").value="";
+    alert("Thanks your message is sent!");
+  }else{
+    alert("Sorry you have to be logged in first!!");
+  }
 });
-
-const saveData = (name, email, desc)=>{
-  var newBlog = blogF.push();
-  newBlog.set({
-    name: name,
-    email: email,
-    description: desc,
-  });
-};
 const getElementVal = (id) =>{
   return document.getElementById(id).value;
 };

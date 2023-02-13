@@ -24,7 +24,8 @@
           <li><a href="about.html">About me</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">contact</a></li>
-          <li><a class="login" href="login.html">Login</a></li>
+          <li class="logg"><a class="login" href="login.html">Login</a></li>
+          <li class="logout" style="display: none"><a  href="index.html" id="logout">Logout</a>
         </ul>
       </div>
     </nav>
@@ -35,93 +36,43 @@
         <div class="">
           <a href="blogs.html"><h1>Blogs</h1></a>
         </div>
-        <div class="search">
+        <!-- <div class="search">
           <input type="text" name="" value=""><span><i class="fa-solid fa-magnifying-glass"></i></span>
-        </div>
+        </div> -->
       </div>
       <hr>
     </div>
     <div class="blog-content">
       <div class="blog2">
-        <img src="images/ux.jpg" alt="">
-        <div class="bg">
-          <h2>What is UX strategy? A complete guide to success!</h2>
-          <p>A UX strategy is a detailed plan for how to keep a user’s experience
-            with a brand in line with the overall goals and objectives of
-            the company. UX strategy can help ensure an organization’s vision
-            of what they want their customers to experience can become
-            a reality while staying within predetermined company guidelines.
-          </p>
+        <div  id="singleBlog" class="card">
+
         </div>
-        <div class="comments">
+        
+        <div class="comments" style="display: none">
           <i class="fa-regular fa-comment like1"></i>
           <i class="fa-regular fa-heart like"></i>
           <i class="fa-solid fa-share like"></i>
-
         </div>
-
       </div>
-      <div class="blog1">
+      <div class="blog1" id="blogsList">
         <h2>Recent Post</h2>
         <hr>
-        <div class="blog-box">
-          <div class="">
-            <img src="images/4.jpg" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-
-        <hr>
-        <div class="blog-box">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="blog-box">
-          <div class="">
-            <img src="images/3.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="blog-box">
-          <div class="">
-            <img src="images/4.jpg" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
+        
       </div>
     </div>
     <div class="likes" id="likke">
-      <hr>
       <h2>Comment section</h2>
-      <hr>
-      <ul>
-        <li><i class="fa-regular fa-user-vneck-hair"></i><span>Good!!</span></li>
-        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
-        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
-        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
-        <li><i class="fa-solid fa-user-vneck-hair"></i><span>Good!!</span></li>
+      <br>
+      <ul id="commentUl">
+        
       </ul>
       <h2>Add comment</h2>
-      <textarea name="name" rows="8" cols="80"></textarea>
-      <button type="button" class="post" name="button">Post</button>
-      <hr>
+      <p id="notLoged">To add a comment you must be logged in!! <span><a href="login.html">login here</a></span></p>
+      <form id="formComment" style="display:none">
+        <textarea id="realComment" rows="8" cols="80"></textarea>
+        <button type="submit" class="post" name="button">Post</button>
+      </form>
+      
     </div>
   </div>
 
@@ -133,16 +84,8 @@
       <li><i class="fa-brands fa-linkedin"></i></li>
     </ul>
   </div>
-  <script>
-    menu = document.querySelector(".menu-bar");
-    menu.onclick = function(){
-      navbar=document.querySelector(".nav-bar");
-      navbar.classList.toggle("active");
-    }
-    document.querySelector(".like1").onclick= function(){
-      document.querySelector(".likes").classList.toggle("hide");
-    }
-  </script>
+  <script src="./src/blogcontent.js"></script>
+  <script src="./src/auth.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,15 @@
-body{
+#bdy{
   background-color: #222222;
+}
+#logg{
+  background-image:url("../images/adlog.jpg") ;
+}
+.update{
+  transition: 0.3s;
+}
+.update:hover{
+  background-color: #222222;
+  color: white;
 }
 nav{
   display: flex;
@@ -25,7 +35,7 @@ nav ul li a:hover{
 nav .menu-bar{
   display: none;
 }
-.container{
+.contai{
   margin: 0 10% 0 10%;
 }
 .logo{
@@ -38,13 +48,21 @@ nav .menu-bar{
   font-size: 1.5rem;
 }
 .login-form{
-  width: 370px;
-  height: 460px;
+  width: 570px;
+  height: 660px;
   background-color: white;
   border-radius: 15px;
   margin:auto;
   font-family: 'Roboto', sans-serif;
   padding:4% 7%;
+}
+.spinner-border#spinn{
+  margin: auto;
+}
+
+.login-form#this{
+  width: 570px;
+  height: 560px;
 }
 .login-form h1{
   text-align: center;

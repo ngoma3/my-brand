@@ -30,14 +30,14 @@
           <li><a href="subscribers.html">Inbox</a>
             <hr>
           </li>
-          <li><a class="logout"href="index.html">Logout</a>
+          <li><a class="logout" href="AdminLogin.html" id="logout">Logout</a>
             <hr>
           </li>
         </ul>
       </div>
     </div>
     <div class="cont">
-      <h1>Subscribers</h1>
+      <h1>Messages</h1>
       <div class="subs">
         <div class="total-blogs">
           <h2>Total blogs:</h2>
@@ -49,14 +49,19 @@
         </div>
       </div>
       <hr>
-      <div id="messageList">
+      <table class="table" >
+        <thead>
+          <th>Names</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Details</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="messageList">
 
-      </div>
-      <div class="list-subs">
-        <h4>ngomachrs@gmail.com</h4>
-        <button class="update" type="button" name="button">Remove</button>
-      </div>
-      <hr>
+        </tbody>
+      </table>
+
 
 
       <div class="bottom-contact">
@@ -70,7 +75,7 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-  <script src="src/contact.js"></script>
+  <script src="src/messages.js"></script>
 </body>
 
 </html>

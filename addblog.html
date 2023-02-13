@@ -31,14 +31,15 @@
           <li><a href="subscribers.html">Inbox</a>
             <hr>
           </li>
-          <li><a class="logout"href="index.html">Logout</a>
+          <li><a class="logout" href="AdminLogin.html" id="logout">Logout</a>
             <hr>
           </li>
         </ul>
       </div>
     </div>
     <div class="cont">
-      <h1>Add Blog</h1>
+      <div class="fixtop">
+        <h1>Add Blog</h1>
       <div class="subs">
         <div class="total-blogs">
           <h2>Total blogs:</h2>
@@ -50,13 +51,16 @@
         </div>
       </div>
       <hr>
+      </div>
       <div class="alert1">
         <p>Published Successfuly <i class="fa-solid fa-circle-check"></i></p>
       </div>
 
-      <form id="blogform" action="">
+      <form id="blogform" >
 <h3>Article</h3>
       <input type="text" id="article" value="">
+      <h3>Category</h3>
+     <input type="text" id="category" value="">
       <h3>Photo</h3>
       <input class="photo" type="file" id="photo" accept="image/*"> <br> <br>
       <div class="picked">

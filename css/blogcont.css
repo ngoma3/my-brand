@@ -128,6 +128,17 @@ nav .menu-bar{
   background-color: white;
   padding: 10px;
 }
+.commentSection .imgComment{
+  width: 10%;
+  height: 10%;
+}
+.commentSection{
+  display: flex;
+  margin-bottom: 10px;
+}
+.textComment{
+  margin-left: 10px;
+}
 .comments i{
   margin-right: 10px;
   cursor: pointer;
@@ -139,7 +150,6 @@ nav .menu-bar{
 }
 .likes ul{
   list-style-type: none;
-  overflow: scroll;
 }
 .likes ul li{
   padding: 10px;

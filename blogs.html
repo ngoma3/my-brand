@@ -10,10 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container">
+  <div class="contai">
     <nav>
       <img class="logo" src="images/logo.png" alt="logo">
       <i class="fa-solid fa-bars menu-bar"></i>
@@ -24,7 +25,8 @@
           <li><a href="about.html">About me</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">contact</a></li>
-          <li><a class="login" href="login.html">Login</a></li>
+          <li class="logg"><a class="login" href="login.html">Login</a></li>
+
         </ul>
       </div>
     </nav>
@@ -35,9 +37,9 @@
         <div class="">
           <a href="blogs.html"><h1>Blogs</h1></a>
         </div>
-        <div class="search">
+        <!-- <div class="search">
           <input type="text" name="" value=""><span><i class="fa-solid fa-magnifying-glass"></i></span>
-        </div>
+        </div> -->
       </div>
       <hr>
     </div>
@@ -49,81 +51,9 @@
         </p>
         <h2>Recent Post</h2>
         <hr>
-        <div class="blog-box" onclick="blog()">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="blog-box" onclick="blog()">
-          <div class="">
-            <img src="images/4.jpg" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="blog-box" onclick="blog()">
-          <div class="">
-            <img src="images/3.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
       </div>
-      <div class="blog1" onclick="blog()">
-        <hr>
-        <div class="blog-box">
-          <div class="">
-            <img src="images/4.jpg" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-
-        <hr>
-        <div class="blog-box" onclick="blog()">
-          <div class="">
-            <img src="images/1.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="blog-box" onclick="blog()">
-          <div class="">
-            <img src="images/3.png" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="blog-box" onclick="blog()">
-          <div class="">
-            <img src="images/4.jpg" alt="">
-          </div>
-          <div class="">
-            <p>How to encourage Knowledge
-              sharing in the workplace?</p>
-          </div>
-        </div>
-        <hr>
-      </div>
+      <div id="blogsList">
+      
     </div>
   </div>
   <div class="bottom-contact">
@@ -134,19 +64,9 @@
       <li><i class="fa-brands fa-linkedin"></i></li>
     </ul>
   </div>
-  <script type="text/javascript">
-    document.querySelector(".blog-box").onclick = function(){
-      location.href="blogcontent.html";
-    };
-    function blog(){
-      location.href="blogcontent.html";
-    };
-    menu = document.querySelector(".menu-bar");
-    menu.onclick = function(){
-      navbar=document.querySelector(".nav-bar");
-      navbar.classList.toggle("active");
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="./src/allblogs.js"></script>
+  <script src="./src/auth.js"></script>
 </body>
 
 </html>

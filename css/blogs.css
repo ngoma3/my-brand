@@ -22,7 +22,7 @@ nav ul li a:hover{
 nav .menu-bar{
   display: none;
 }
-.container{
+.contai{
   margin: 0;
   padding: 0 10%;
   background-color: #222222;
@@ -32,6 +32,9 @@ nav .menu-bar{
   right: 0;
   top: 0;
 }
+/* .container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+} */
 .logo{
   width: 180px;
   height: 80px;
@@ -46,27 +49,31 @@ nav .menu-bar{
   margin: 100px 10% 0 10%;
 }
 .blog-content{
-  display:flex;
+  /* display:flex; */
   justify-content: space-between;
+}
+.blog-content #blogsList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .blog-content p{
     font-size: 1.2rem;
 }
-.blog-content img{
-  width: 80px;
-  height: 80px;
-  margin: 10px 0;
+
+
+.card{
+  margin-bottom: 15px;
 }
-.blog-box{
-  display: flex;
-  transition: transform 0.3s;
-  cursor: pointer;
+.card img{
+  height: 150px;
 }
-.blog-box:hover{
-  transform: scale(1.03);
+.card .card-body a{
+  position: absolute;
+  bottom: 10px;
 }
-.blog-box p{
-  padding-left: 20px;
+.card-body{
+  height: 200px;
 }
 .box-header{
   display: flex;
@@ -218,9 +225,9 @@ nav .menu-bar{
   .blog-content p{
       font-size: 1.5rem;
   }
-  .blog-content img{
+  /* .blog-content img{
     width: 250px;
     height: 250px;
     margin: 10px 50px 10px 0;
-  }
+  } */
 }
