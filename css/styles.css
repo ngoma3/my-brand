@@ -115,7 +115,7 @@ nav .menu-bar{
   left: 0;
 }
 .about-content {
-  background-color: white;
+  background-color: rgb(219, 219, 219);
   border-radius: 120px 120px 0 0;
   padding-top: 50px;
   width: 100%;

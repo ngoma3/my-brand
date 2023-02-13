@@ -22,6 +22,23 @@ nav ul li a:hover{
 nav .menu-bar{
   display: none;
 }
+.okleft{
+  background: linear-gradient(270deg,rgb(0, 0, 0,70%)0%,rgb(0, 0, 0,10%)56%,rgb(0, 0, 0,3%)100%);
+  z-index: -1;
+  transition:all 1.2s;
+}
+.goodline{
+  height: 5px;
+ background: rgb(0, 0, 0,50%);
+ margin-bottom: 25px;
+}
+.blog1 hr{
+  border: dotted grey 5px;
+  border-bottom: none;
+  width: 50%;
+  margin:20px 0 30px 0;
+  opacity: 0.9;
+}
 .contai{
   margin: 0;
   padding: 0 10%;

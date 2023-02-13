@@ -22,7 +22,7 @@
 
   function blog(key){
     localStorage.setItem("blogId",key);
-    location.href="blogcontent.html";
+    location.href=`blogcontent.html?id=${key}`;
   };
   menu = document.querySelector(".menu-bar");
   menu.onclick = function(){

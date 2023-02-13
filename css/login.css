@@ -50,7 +50,7 @@ nav .menu-bar{
 .login-form{
   width: 570px;
   height: 660px;
-  background-color: white;
+  background-color: rgb(216, 216, 216);
   border-radius: 15px;
   margin:auto;
   font-family: 'Roboto', sans-serif;

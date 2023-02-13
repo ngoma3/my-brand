@@ -12,7 +12,7 @@
     referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="okleft">
   <div class="container">
     <nav>
       <img class="logo" src="images/logo.png" alt="logo">
@@ -34,13 +34,16 @@
     <div class="">
       <div class="box-header">
         <div class="">
-          <a href="blogs.html"><h1>Blogs</h1></a>
+          <a href="blogs.html"><h1 style="color:#dada40">Blogs</h1></a>
         </div>
         <!-- <div class="search">
           <input type="text" name="" value=""><span><i class="fa-solid fa-magnifying-glass"></i></span>
         </div> -->
       </div>
-      <hr>
+      <div class="goodline">
+
+      </div>
+      <!-- <hr> -->
     </div>
     <div class="blog-content">
       <div class="blog2">
@@ -49,9 +52,10 @@
         </div>
         
         <div class="comments" style="display: none">
-          <i class="fa-regular fa-comment like1"></i>
-          <i class="fa-regular fa-heart like"></i>
-          <i class="fa-solid fa-share like"></i>
+          <i class="fa-regular fa-comment like1"><span id="commentnbr"></span></i>
+          <i class="fa-solid fa-share like" id="shareblog"></i>
+          
+          
         </div>
       </div>
       <div class="blog1" id="blogsList">

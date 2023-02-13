@@ -56,15 +56,21 @@ function Snap() {
      </div>
      `;
             document.querySelector(".comments").style.display = "block";
+            let nbr=data.comments.length;
+            document.getElementById("commentnbr").innerHTML=nbr
             data.comments.forEach(function (comment) {
                 document.querySelector("#commentUl").innerHTML +=
                     `<li>
                 <div class="commentSection">
                 <img src="./images/account.png" class="imgComment" alt="">
                 <div class="textComment">
-                    <h4>${comment.user}</h4>
+                <div>
+                <h4><font color="#0A2647">${comment.user}</font></h4>
                     <p>${comment.comment}</p>
-                    <p>${comment.date}</p>
+                </div>
+                <div>
+                <p>${comment.date}</p>
+                </div> 
                 </div>
                 </div>
             </li>`;
@@ -75,7 +81,10 @@ function Snap() {
 }
 document.getElementById("formComment").addEventListener("submit", (e) => {
     e.preventDefault();
-    const blogId = localStorage.getItem("blogId");
+    const queryString=window.location.search;
+    const urlParams= new URLSearchParams(queryString);
+    const blogId = urlParams.get("id");
+    //const blogId = localStorage.getItem("blogId");
     const userToken = localStorage.getItem("userToken");
     const commt = getElementVal("realComment");
     
@@ -117,7 +126,18 @@ document.getElementById("formComment").addEventListener("submit", (e) => {
         });
 
 });
+const copyButton = document.querySelector('#shareblog');
+const queryString=window.location.href;
 
+  copyButton.addEventListener('click', function() {
+    const dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.value = queryString;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+    alert("URL copied to clipboard!");
+  });
 function blog(key) {
     localStorage.setItem("blogId", key);
     location.href = "blogcontent.html";
